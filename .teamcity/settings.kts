@@ -69,7 +69,7 @@ object Build : BuildType({
             conditions {
                 contains("teamcity.build.branch", "master")
             }
-            goals = "clean deploy"
+            goals = "clean package"
             runnerArgs = "-Dmaven.test.failure.ignore=true"
             userSettingsSelection = "netology"
         }
